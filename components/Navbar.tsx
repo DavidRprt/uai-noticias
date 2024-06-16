@@ -20,10 +20,10 @@ const Navbar = () => {
 
   return (
     <nav className="mx-auto border sticky left-0 right-0 top-0 z-30 bg-white bg-opacity-100 w-full">
-      <div className="flex md:flex-col px-4 py-2 md:py-4 md:px- items-center justify-between w-full">
+      <div className="flex md:flex-col px-4 py-2 md:py-4 items-center justify-between w-full">
         <Link href="/">
-          <h2 className="text-slate-900 font-medium md:font-semibold text-xl my-2 md:mb-4 md:mt-0">
-            Noticias UAI
+          <h2 className="text-slate-900 font-medium md:font-semibold text-xl md:text-2xl my-2 md:mb-2 md:mt-0 title-font">
+            UAI Times
           </h2>
         </Link>
         <div className="w-full">
@@ -31,9 +31,9 @@ const Navbar = () => {
             {navLinks.map((link) => (
               <li
                 key={link.name}
-                className={`regular-16 text-slate-700 flexCenter cursor-pointer pb-1.5 transition-all hover:text-black border-b-4 ${
+                className={`regular-16 text-slate-700 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold border-b-4 ${
                   selectedSection === link.name
-                    ? "border-slate-500"
+                    ? "border-slate-500 font-bold"
                     : "border-transparent"
                 }`}
               >

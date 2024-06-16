@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Noticias UAI",
+  title: "UAI Times",
   description: "Portal de noticias UAI",
 }
 
@@ -19,7 +19,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        <main className="relative overflow-hidden">{children}</main>
+        <main className="relative overflow-hidden p-4 md:px-10 bg-zinc-100">
+          {children}
+        </main>
       </body>
     </html>
   )
